@@ -1,0 +1,28 @@
+#navigation-url {
+    width: 70vw;
+}
+
+.content-wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.chart-wrapper {
+    max-width: 40vw;
+}
+
+@media only screen and (max-width: 800px) {
+    .content-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .chart-wrapper {
+        max-width: 80vw;
+    }
+
+    .chart-wrapper:first-child {
+        margin-bottom: 2em;
+    }
+}

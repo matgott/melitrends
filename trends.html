@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MeliStats</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/trends.css">
+</head>
+<body>
+    <div class="navigation-wrapper">
+        <div class="navigation-control-wrapper">
+            <select name="navigation-country" id="navigation-country" class="form-control navigation-control"></select>
+
+            <select name="navigation-category" id="navigation-category" class="form-control navigation-control"></select>
+
+            <button id="navigation-action" class="form-control navigation-control" type="button">BUSCAR</button>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <div id="info-wrapper" class="info-wrapper fadeOut">
+            <div>
+                <span id="info-country" class="info-data"></span> > <span id="info-category" class="info-data"></span>
+            </div>
+        </div>
+
+        <div id="item-wrapper" class="item-wrapper">
+        </div>
+        
+        <div id="load-more-wrapper">
+            <button id="load-more" class="form-control fadeOut">VER MÁS</button>
+        </div>
+    </div>
+
+    <script src="./js/trends.js"></script>
+</body>
+</html>
